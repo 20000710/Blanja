@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanja</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col logo d-flex align-items-center justify-content-center">
+                    <img src="../assets/img/logo.png" alt="Blanja Logo">
+                    <h2 class="blanja-font pt-2">Blanja</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-center statement">
+                    <p>Please login with your account</p>
+                </div>
+            </div>
+        </header>        
+        <main>
+            <nav class="role">
+                <div class="row d-flex justify-content-center">
+                    <button type="submit" id="customer" class="btn customer">Customer</button>
+                    <button type="submit" id="seller" class="btn seller">Seller</button>
+                </div>
+            </nav>
+            <div class="login-form d-flex justify-content-center">
+                <form>
+                    <div class="form-group">
+                        <div class="row">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group mb-0">
+                        <div class="row">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-end p-0">
+                            <a href="reset-password.html" class="text-right">Forgot password?</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col p-0">
+                            <button type="submit" class="btn-login">Login</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <p class="text-center">Don't have a Blanja account? <a href="signup.html" class="register-link">Register</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/scripts/login.js"></script>
+</body>
+</html>
