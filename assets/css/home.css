@@ -138,7 +138,9 @@ header{
     transform: scaleX(-1);    
 }
 
-.category, .new{
+.category, 
+.new, 
+.popular{
     margin-top: 50px;
 }
 
@@ -151,7 +153,9 @@ header{
     height: 220px;
 }
 
-.category  h1, .new h1{
+.category  h1, 
+.new h1, 
+.popular h1{
     font-style: normal;
     font-weight: 700;
     font-size: 34px;
@@ -159,7 +163,9 @@ header{
     color: #222222;
 }
 
-.category p, .new p{
+.category p, 
+.new p, 
+.popular p{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -167,19 +173,23 @@ header{
     color: #9B9B9B;
 }
 
-.new .row{
+.new .row,
+.popular .row{
     flex-wrap: nowrap;
 }
 
-.new .row .title{
+.new .row .title,
+.popular .row .title{
     height: 55px;
 }
 
-.new .row .col-lg-2{
+.new .row .col-lg-2,
+.popular .row .col-lg-2{
     margin-right: 43px;
 }
 
-.new .card{
+.new .card,
+.popular .card{
     margin-top: 25px;
     width: 208px;
     height: 278px;
@@ -189,22 +199,42 @@ header{
     border-radius: 8px;
 }
 
-.new .card-text{
+.new .card-body,
+.popular .card-body{
+    padding: 12px;
+}
+
+.new .card-text,
+.popular .card-text{
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
 }
 
-.new .card-text:nth-child(1){
+.new .card-text:nth-child(1),
+.popular .card-text:nth-child(1){
+    margin-bottom: 6px;
     color: #000000;
     line-height: 24px;
 }
 
-.new .card-text:nth-child(2){
+.new .card-text:nth-child(2),
+.popular .card-text:nth-child(2){
     color: #DB3022;
     line-height: 16px;
+    margin-bottom: 6px;
 }
 
-.new .card img{
+.new .card img,
+.popular .card img{
     border-radius: 8px 8px 0px 0px;
+}
+
+.new .card .stars,
+.popular .card .stars{
+    margin-top: 11px;
+    width: 95px;
+    height: 14px;
+    left: 162px;
+    top: 1382px;
 }
