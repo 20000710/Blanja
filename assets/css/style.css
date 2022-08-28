@@ -122,3 +122,18 @@ div.statement p{
 .reset-form .col{
     margin-top: 2.5rem;
 }
+
+.statement-danger .text-danger{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.reset-password{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 40px 0px 22px 0px !important;
+}

@@ -238,3 +238,155 @@ header{
     left: 162px;
     top: 1382px;
 }
+
+.modal .modal-content{
+    width: 450px;
+    height: 758px;
+}
+
+.modal button.close{
+    margin: 0px;
+}
+
+.modal .modal-close{
+    width: 24.5px;
+    height: 24.5px;
+}
+
+.modal .modal-header{
+    height: 70px;
+    justify-content: normal;
+    align-items: center;
+}
+
+.modal .modal-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    margin-left: 18.05px;
+}
+
+.modal p{
+    font-size: 16px;
+    line-height: 16px;
+    margin: 20px 0px 3px 26px;
+    color: #222222;
+}
+
+.modal .choose-color button:nth-child(1),
+.modal .sizes button:nth-child(1){
+    margin-left: 26px;    
+}
+
+.modal .choose-color button{
+    margin-left: 30px;
+    width: 36px;
+    height:36px;
+    border-radius: 50%;
+    border: 0px;
+}
+
+.modal .choose-color button:focus,
+.modal .sizes button:focus,
+.modal .sizes button:nth-child(2):focus,
+.modal .sizes button:nth-child(3):focus{
+    border: 2px solid #22a7db;
+}
+
+.modal .choose-color button[value="black"]{
+    background-color: #222222;
+}
+
+.modal .choose-color button[value="white"]{
+    background-color: #fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.modal .choose-color button[value="red"]{
+    background-color: #B82222;
+}
+
+.modal .choose-color button[value="cream"]{
+    background-color: #BEA9A9;
+}
+
+.modal .choose-color button[value="yellow-cream"]{
+    background-color: #E2BB8D;
+}
+
+.modal .choose-color button[value="blue"]{
+    background-color: #151867;
+}
+
+.modal hr{
+    border: 2px solid #F4F4F4;
+    margin: 26px 0px 20px
+}
+
+.modal .sizes button{
+    background: #FFFFFF;
+    margin-left: 16px;
+    width: 40px;
+    height: 40px;
+    border: 0.4px solid #9B9B9B;
+    border-radius: 8px;
+}
+
+.modal .sizes button:nth-child(2),
+.modal .sizes button:nth-child(3),
+.modal .modal-category #all,
+.modal .modal-footer .apply-btn{
+    border: 1px solid #DB3022;
+    background: #DB3022;
+    color: #fff;
+}
+
+.modal .modal-category button{
+    width: 100px;
+    height: 40px;
+    margin-left: 22px !important;
+    background: #FFFFFF;
+    border: 0.4px solid #9B9B9B;
+    margin-left: 16px;
+    border-radius: 8px;
+}
+
+.modal .modal-category #row-2{
+    margin-top: 12px !important;
+}
+
+.modal .brand select{
+    background-image: url('../img/dropdown.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 12px 7.41px;
+    border: 0px;
+    color: #9B9B9B;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    margin: 0px 48px 0px 26px;
+}
+
+.modal .modal-footer button{
+    width: 160px;
+    height: 36px;
+    margin-right: 11px;
+    background: #fff;
+    border-radius: 24px;
+    border: 1px solid #222222;
+}
+
+.modal .modal-footer .apply-btn{
+    margin-left: 11px;
+}
+
+.modal .modal-footer{
+    background: #FFFFFF;
+    box-shadow: 0px -8px 10px rgb(217 217 217 / 25%);
+    border-radius: 0px 0px 8px 8px;
+}

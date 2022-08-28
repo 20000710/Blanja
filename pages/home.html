@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="col p-0">
-                    <button type="button" class="filter-btn"><img src="../assets/img/filter.png" alt="filter icon"></button>
+                    <button type="button" class="filter-btn" data-toggle="modal" data-target="#filter-popup"><img src="../assets/img/filter.png" alt="filter icon"></button>
                 </div>
                 <div class="col p-0">
                     <button type="button" class="cart-btn"><img src="../assets/img/cart.png" alt="cart icon"></button>
@@ -37,6 +37,74 @@
             </div>
         </nav>
         <header>
+            <!-- Modal -->
+            <div class="modal fade" id="filter-popup" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close p-0" data-dismiss="modal" aria-label="Close">
+                                <img class="modal-close" src="../assets/img/close.png">
+                            </button>
+                            <h5 class="modal-title" id="filterModalLabel">Filter</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+                    <div class="modal-body p-0">
+                        <div class="choose-color">
+                            <p>Colors</p>
+                            <div class="row m-0">
+                                <button type="button" value="black"></button>
+                                <button type="button" value="white"></button>
+                                <button type="button" value="red"></button>
+                                <button type="button" value="cream"></button>
+                                <button type="button" value="yellow-cream"></button>
+                                <button type="button" value="blue"></button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="sizes">
+                            <p>Sizes</p>
+                            <div class="row m-0">
+                                <button type="button" value="xs">XS</button>
+                                <button type="button" value="s">S</button>
+                                <button type="button" value="m">M</button>
+                                <button type="button" value="l">L</button>
+                                <button type="button" value="xl">XL</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="modal-category">
+                            <p>Category</p>
+                            <div class="row m-0">
+                                <button type="button" id="all">All</button>
+                                <button type="button">Women</button>
+                                <button type="button">Men</button>
+                            </div>
+                            <div class="row m-0" id="row-2">
+                                <button type="button">Boys</button>
+                                <button type="button">Girls</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="brand">
+                            <p>Brand</p>
+                            <div class="row m-0">
+                                <select>
+                                    <option value="brand1">adidas Originals, Jack & Jones, s.Oliver</option>
+                                    <option value="brand1">Ardilles, Bata, Wadimor</option>
+                                    <option value="brand1">Uniqlo, Chanel, The Executive</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="discard-btn" data-dismiss="modal">Discard</button>
+                        <button type="button" class="apply-btn">Apply</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel -->
             <div class="container-fluid">
                 <div id="carouselExample" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner row w-10 mxauto" role="listbox">
