@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My bag</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/mybag.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar-menu p-0">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-3 p-0 logo d-flex align-items-center">
+                    <img src="../assets/img/logo.png" alt="Blanja Logo">
+                    <h2 class="blanja-font pt-2">Blanja</h2>
+                </div>
+                <div class="col-5 p-0 search-input d-flex flex-row">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
+                    <button type="button" class="filter-btn" data-toggle="modal" data-target="#filter-popup"><img src="../assets/img/filter.png" alt="filter icon"></button>
+                </div>
+                <div class="col-3 p-0 d-flex flex-row">
+                    <button type="button" class="cart-btn"><img src="../assets/img/cart.png" alt="cart icon"></button>
+                    <button type="button" class="bell-btn"><img src="../assets/img/bell.png" alt="bell icon"></button>
+                    <button type="button" class="mail-btn"><img src="../assets/img/mail.png" alt="mail icon"></button>
+                    <a href="#" class="photo-profile"><img src="../assets/img/profile-photo.png" alt="Photo Profile"></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <!-- Modal -->
+            <div class="modal fade" id="filter-popup" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close p-0" data-dismiss="modal" aria-label="Close">
+                                <img class="modal-close" src="../assets/img/close.png">
+                            </button>
+                            <h5 class="modal-title" id="filterModalLabel">Filter</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+                    <div class="modal-body p-0">
+                        <div class="choose-color">
+                            <p>Colors</p>
+                            <div class="row m-0">
+                                <button type="button" value="black"></button>
+                                <button type="button" value="white"></button>
+                                <button type="button" value="red"></button>
+                                <button type="button" value="cream"></button>
+                                <button type="button" value="yellow-cream"></button>
+                                <button type="button" value="blue"></button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="sizes">
+                            <p>Sizes</p>
+                            <div class="row m-0">
+                                <button type="button" value="xs">XS</button>
+                                <button type="button" value="s">S</button>
+                                <button type="button" value="m">M</button>
+                                <button type="button" value="l">L</button>
+                                <button type="button" value="xl">XL</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="modal-category">
+                            <p>Category</p>
+                            <div class="row m-0">
+                                <button type="button" id="all">All</button>
+                                <button type="button">Women</button>
+                                <button type="button">Men</button>
+                            </div>
+                            <div class="row m-0" id="row-2">
+                                <button type="button">Boys</button>
+                                <button type="button">Girls</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="brand">
+                            <p class="brand-text">Brand</p>
+                            <div class="row m-0">
+                                <select>
+                                    <option value="brand1">adidas Originals, Jack & Jones, s.Oliver</option>
+                                    <option value="brand1">Ardilles, Bata, Wadimor</option>
+                                    <option value="brand1">Uniqlo, Chanel, The Executive</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="discard-btn" data-dismiss="modal">Discard</button>
+                        <button type="button" class="apply-btn">Apply</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="mybag-title">
+                <div class="row"><h1>My Bag</h1></div>
+            </div>
+            <div class="row">
+                <section>
+                    <div class="col-7 pr-0">
+                        <div class="select-all select">
+                            <div class="row m-0">
+                                <input type="checkbox" name="select-all" id="select-all">
+                                <p>Select all items <span>(2 items selected)</span></p>
+                                <a href="#">Delete</a>
+                            </div>
+                        </div>
+                        <div class="select-item select">
+                            <div class="row m-0">
+                                <input type="checkbox" name="select-all" id="select-all">
+                                <img src="../assets/img/suit-formal-icon.png">
+                                <div class="item-text">
+                                    <p>Men's formal suit - Black</p>
+                                    <p>Zalora Cloth</p>
+                                </div>
+                                    <div class="row">
+                                        <a  onclick="return decrement()">
+                                            <div class="ellipse-minus">                
+                                                <img class="minus" src="../assets/img/rectangle-icon.png">
+                                            </div>
+                                        </a>
+                                        <div class="number" id="number">1</div>
+                                        <a onclick="return increment()">
+                                            <div class="ellipse-plus">
+                                                <img class="plus" src="../assets/img/plus.png">
+                                            </div>
+                                        </a>
+                                        <p class="price">$ 20.0</p>
+                                    </div>        
+                            </div>
+                        </div>
+                        <div class="select-item select">
+                            <div class="row m-0">
+                                <input type="checkbox" name="select-all" id="select-all">
+                                <img src="../assets/img/jacket.png">
+                                <div class="item-text">
+                                    <p>Men's Jacket jeans</p>
+                                    <p>Zalora Cloth</p>
+                                </div>
+                                <div class="row">
+                                    <a href="#" id="minus">
+                                        <div class="ellipse-minus">                
+                                            <img class="minus" src="../assets/img/rectangle-icon.png">
+                                        </div>
+                                    </a>
+                                    <div class="number" id="number">1</div>
+                                    <a href="#" id="plus">
+                                        <div class="ellipse-plus">
+                                            <img class="plus" src="../assets/img/plus.png">
+                                        </div>
+                                    </a>
+                                    <p class="price">$ 20.0</p>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <aside>
+                    <div class="summary">
+                        <p class="title  mb-0">Shopping Summary</p>
+                        <div class="row ml-0">
+                            <p class="total-price">Total price</p>
+                            <p class="price">$ 40.0</p>
+                        </div>
+                        <button class="buy" type="button">Buy</button>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
