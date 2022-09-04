@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/page-product.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <nav class="navbar-menu p-0">
+            <div class="row">
+                <div class="col p-0 logo d-flex align-items-center">
+                    <img src="../assets/img/logo.png" alt="Blanja Logo">
+                    <h2 class="blanja-font">Blanja</h2>
+                </div>
+                <div class="col- p-0 search-input">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <button type="button" class="filter-btn" data-toggle="modal" data-target="#filter-popup"><img src="../assets/img/filter.png" alt="filter icon"></button>
+                </div>
+                <div class="col p-0">
+                    <button type="button" class="cart-btn"><img src="../assets/img/cart.png" alt="cart icon"></button>
+                </div>
+                <div class="col p-0 d-flex justify-content-center auth">
+                    <button class="login-btn" type="submit"><a href="login.html">Login</a></button>
+                    <button class="signup-btn" type="submit"><a href="signup.html"> Signup</a></button>
+                </div>
+            </div>
+        </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Category</a></li>
+              <li class="breadcrumb-item active" aria-current="page">T-shirt</li>
+            </ol>
+          </nav>
+    </header>
+    <main>
+      <div class="image-gallery">
+        <div class="row">
+          <div class="col pr-0 display-img">
+            <img src="../assets/img/baju-muslim1.png" id="main-img" class="main-img" alt="main image">
+          </div>
+          <div class="col desc-img">
+            <aside>
+              <div class="product-desc">
+                <h1>Baju muslim pria</h1>
+                <p>Zalora Cloth</p>
+                <img class="stars" src="../assets/img/rating-5-stars.png">
+              </div>
+              <div class="product-price">
+                <p>Price</p>
+                <h1>$ 20.0</h1>
+              </div>
+              <div class="product-color">
+                <p>Color</p>
+                    <button type="button" value="black"></button>
+                    <button type="button" value="red"></button>
+                    <button type="button" value="blue"></button>
+                    <button type="button" value="green"></button>
+              </div>
+              <div class="product-amount">
+                <div class="row">
+                  <p>Size</p>
+                  <p>Jumlah</p>
+                </div>
+                <div class="row ml-0 mt-0">
+                  <!-- calculate size -->
+                  <button type="button" id="size-minus" class="btn btn-minus">      
+                    <img src="../assets/img/rectangle-icon.png">
+                  </button>
+                  <div class="number" id="size-number">28</div>
+                  <button type="button" id="size-plus" class="btn btn-plus">
+                    <img src="../assets/img/plus.png">
+                  </button>
+                  <!-- calculate amount -->
+                  <button type="button" id="amount-minus" class="btn btn-minus">      
+                    <img src="../assets/img/rectangle-icon.png">
+                  </button>
+                  <div class="number" id="amount-number">1</div>
+                  <button type="button" id="amount-plus" class="btn btn-plus">
+                    <img src="../assets/img/plus.png">
+                  </button>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <div class="row second-row">
+          <div class="image-collection">
+            <img src="../assets/img/baju-muslim5.png" id="sub-img1" class="sub-img" alt="sub image 1">
+            <img src="../assets/img/baju-muslim4.png" id="sub-img2" class="sub-img" alt="sub image 2">
+            <img src="../assets/img/baju-muslim3.png" id="sub-img3" class="sub-img" alt="sub image 3">
+            <img src="../assets/img/baju-muslim2.png" id="sub-img4" class="sub-img" alt="sub image 4">
+            <img src="../assets/img/baju-muslim1.png" id="sub-img5" class="sub-img" alt="sub image 5">
+          </div>
+          <div class="product-button">         
+            <button type="submit" class="chat">Chat</button>
+            <button type="submit" class="add-bag">Add bag</button>
+            <button type="submit" class="buy-now">Buy Now</button>
+          </div>
+        </div>
+        <div class="product-information">
+          <h1>Informasi Produk</h1>
+          <div class="condition">
+            <h2>Condition</h2>
+            <p>New</p>
+          </div>
+          <div class="product-description">
+            <h2>Description</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/><br/>
+              Donec non magna rutrum, pellentesque augue eu, sagittis velit. 
+              Phasellus quis laoreet dolor. Fusce nec pharetra quam. 
+              Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+              Praesent sed enim vel turpis blandit imperdiet ac ac felis. 
+              Etiam tincidunt tristique placerat. Pellentesque a consequat mauris, vel suscipit ipsum. 
+              Donec ac mauris vitae diam commodo vehicula. 
+              Donec quam elit, sollicitudin eu nisl at, ornare suscipit magna.<br/><br/>     
+              Donec non magna rutrum, pellentesque augue eu, sagittis velit. 
+              Phasellus quis laoreet dolor. Fusce nec pharetra quam. 
+              Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sed enim vel turpis blandit imperdiet ac ac felis.<br/><br/>
+              In ultricies rutrum tempus. Mauris vel molestie orci.
+            </p>
+          </div>
+        </div>
+        <div class="product-review">
+          <h1>Product Review</h1>
+          <div class="review-number">
+            <h1>5.0</h1>
+            <p>/10</p>
+            <div class="user-rating">
+              <div class="stars">
+                <img src="../assets/img/yellow-stars.png" alt="rating user 1">
+                <img src="../assets/img/yellow-stars.png" alt="rating user 2">
+                <img src="../assets/img/yellow-stars.png" alt="rating user 3">
+                <img src="../assets/img/yellow-stars.png" alt="rating user 4">
+                <img src="../assets/img/yellow-stars.png" alt="rating user 5">
+              </div>
+              <div class="number">
+                <p>5</p>
+                <p>4</p>
+                <p>3</p>
+                <p>2</p>
+                <p>1</p>                
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="total-number">
+                <p>4</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+          <img src="../assets/img/rating.png" alt="rating product">
+        </div>
+        <hr class="seperator">
+        <section class="recomendation">
+          <div class="row">
+              <div class="col-lg-12 col-md-6 col-12 p-0 title">
+                  <h1 class="mb-0">You can also like this</h1>
+                  <p>You’ve never seen it before!</p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-2 col-md-6 col-2 p-0">
+                  <div class="card w-208 h-248">
+                      <img src="../assets/img/formal-suit.png" class="card-img-top" alt="card 1">
+                      <div class="card-body">
+                          <p class="card-text">Men's formal suit - Black & White</p>
+                          <p class="card-text">$ 40.0</p>
+                          <p class="card-text m-0">Zalora Cloth</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-2 p-0">
+                  <div class="card w-208 h-248">
+                      <img src="../assets/img/formal-suit.png" class="card-img-top" alt="card 1">
+                      <div class="card-body">
+                          <p class="card-text">Men's formal suit - Black & White</p>
+                          <p class="card-text">$ 40.0</p>
+                          <p class="card-text m-0">Zalora Cloth</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-2 p-0">
+                  <div class="card w-208 h-248">
+                      <img src="../assets/img/formal-suit.png" class="card-img-top" alt="card 1">
+                      <div class="card-body">
+                          <p class="card-text">Men's formal suit - Black & White</p>
+                          <p class="card-text">$ 40.0</p>
+                          <p class="card-text m-0">Zalora Cloth</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-2 p-0">
+                  <div class="card w-208 h-248">
+                      <img src="../assets/img/formal-suit.png" class="card-img-top" alt="card 1">
+                      <div class="card-body">
+                          <p class="card-text">Men's formal suit - Black & White</p>
+                          <p class="card-text">$ 40.0</p>
+                          <p class="card-text m-0">Zalora Cloth</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-2 p-0">
+                  <div class="card w-208 h-248">
+                      <img src="../assets/img/formal-suit.png" class="card-img-top" alt="card 1">
+                      <div class="card-body">
+                          <p class="card-text">Men's formal suit - Black & White</p>
+                          <p class="card-text">$ 40.0</p>
+                          <p class="card-text m-0">Zalora Cloth</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-2 col-md-6 col-2 p-0">
+                  <div class="card w-208 h-248">
+                      <img src="../assets/img/formal-suit.png" class="card-img-top" alt="card 1">
+                      <div class="card-body">
+                        <p class="card-text">Men's formal suit - Black & White</p>
+                        <p class="card-text">$ 40.0</p>
+                        <p class="card-text m-0">Zalora Cloth</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-2 p-0">
+                  <div class="card w-208 h-248">
+                      <img src="../assets/img/formal-suit.png" class="card-img-top" alt="card 1">
+                      <div class="card-body">
+                        <p class="card-text">Men's formal suit - Black & White</p>
+                        <p class="card-text">$ 40.0</p>
+                        <p class="card-text m-0">Zalora Cloth</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-2 p-0">
+                  <div class="card w-208 h-248">
+                      <img src="../assets/img/formal-suit.png" class="card-img-top" alt="card 1">
+                      <div class="card-body">
+                        <p class="card-text">Men's formal suit - Black & White</p>
+                        <p class="card-text">$ 40.0</p>
+                        <p class="card-text m-0">Zalora Cloth</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-2 p-0">
+                  <div class="card">
+                      <img src="../assets/img/formal-suit.png" class="card-img-top" alt="card 1">
+                      <div class="card-body">
+                        <p class="card-text">Men's formal suit - Black & White</p>
+                        <p class="card-text">$ 40.0</p>
+                        <p class="card-text m-0">Zalora Cloth</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-2 p-0">
+                  <div class="card w-208 h-248">
+                      <img src="../assets/img/formal-suit.png" class="card-img-top" alt="card 1">
+                      <div class="card-body">
+                        <p class="card-text">Men's formal suit - Black & White</p>
+                        <p class="card-text">$ 40.0</p>
+                        <p class="card-text m-0">Zalora Cloth</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      </div>
+    </main>
+  </div>
+  <script src="../assets/scripts/page-product.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

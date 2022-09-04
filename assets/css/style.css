@@ -2,6 +2,44 @@
     font-family: 'MetropolisMedium';
 }
 
+@media (min-width: 0px) and (max-width: 400px){
+
+    .login-form form .row,
+    .signup-form .row,
+    .reset-form .row{        
+        max-width: calc(100% - 20%);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .btn-login, .reset-btn, .btn-signup{
+        width: 100%;
+        max-width: calc(100% - 20%);
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .btn-signup{
+        max-width: calc(100% - 20%);
+        margin-right: auto;
+        margin-left: auto;   
+    } */
+}
+
+@media (min-width: 0px) and (max-width: 350px) {
+    .login-form form .row,
+    .signup-form .row,
+    .signup-form .row{
+        max-width: calc(100% - 30%);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
 .logo{
     margin-top: 100px;
 }
@@ -44,8 +82,17 @@ div.statement p{
     border-radius: 4px 0px 0px 4px;
 }
 
+.role .customer:hover{
+    color: #fff;
+}
+
+
 .role .seller{
     border-radius: 0px 4px 4px 0px;
+}
+
+.role .seller:hover{
+    color: #9B9B9B;
 }
 
 .login-form{

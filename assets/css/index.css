@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .navbar-menu{
     position: fixed;
     width: 100%;
